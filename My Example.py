@@ -32,10 +32,30 @@ taxes = myIncome*taxRate
 # poppedItem = newList.pop(3)
 # print(poppedItem)
 
-myDict = {'key1':'val1', 'key2':'val2'}
-print(myDict['key2'])
+# myDict = {'key1':'val1', 'key2':'val2'}
+# print(myDict['key2'])
 
-priceLookUp = {'apple':2.99, 'oranges':3.99, 'milk':1.99}
-print(priceLookUp['oranges'])
+# priceLookUp = {'apple':2.99, 'oranges':3.99, 'milk':1.99}
+# print(priceLookUp['oranges' ])
+
+
+#Key within a key
+d={'k1':123, 'k2':['a','b','c'], 'k3':{'insideKey':100}}
+print(d['k2'])
+
+#stacking key calls
+print(d['k2'][2])
+print(d['k3']['insideKey'])
+print(d['k2'][0].upper())
+
+#Appending and changing key values
+d['k1'] = 'NEW VALUE'
+d['k4'] = 9000
+print(d)
+
+print(d.keys())
+print(d.values())
+print(d.items())
+
 
 
