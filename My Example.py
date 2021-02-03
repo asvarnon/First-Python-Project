@@ -5,4 +5,6 @@ taxes = myIncome*taxRate
 type(taxes)
 print(taxes)
 
+randomString = "Hi how are you"
+print(len(randomString))
 
