@@ -57,13 +57,23 @@ taxes = myIncome*taxRate
 # print(d.values())
 # print(d.items())
 
-t = (1,3,3)
-print(type(t))
-length = len(t)
-print(f"Length of t: {length}")
-count = t.count(3)
-print(f"Number of times 3 comes up: {count} times")
+#Tuples
+    # t = (1,3,3)
+    # print(type(t))
+    # length = len(t)
+    # print(f"Length of t: {length}")
+    # count = t.count(3)
+    # print(f"Number of times 3 comes up: {count} times")
 
+
+
+#Sets
+    # mySet = set()
+    # mySet.add(1)
+    # mySet.add(2)
+    # print(mySet)
+myList = [1,1,1,2,2,2,3,3,3,3,3]
+print(set(myList))
 
 
 
