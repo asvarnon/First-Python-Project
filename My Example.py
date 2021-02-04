@@ -40,22 +40,30 @@ taxes = myIncome*taxRate
 
 
 #Key within a key
-d={'k1':123, 'k2':['a','b','c'], 'k3':{'insideKey':100}}
-print(d['k2'])
+    # d={'k1':123, 'k2':['a','b','c'], 'k3':{'insideKey':100}}
+    # print(d['k2'])
 
 #stacking key calls
-print(d['k2'][2])
-print(d['k3']['insideKey'])
-print(d['k2'][0].upper())
+    # print(d['k2'][2])
+    # print(d['k3']['insideKey'])
+    # print(d['k2'][0].upper())
 
 #Appending and changing key values
-d['k1'] = 'NEW VALUE'
-d['k4'] = 9000
-print(d)
+    # d['k1'] = 'NEW VALUE'
+    # d['k4'] = 9000
+    # print(d)
 
-print(d.keys())
-print(d.values())
-print(d.items())
+# print(d.keys())
+# print(d.values())
+# print(d.items())
+
+t = (1,3,3)
+print(type(t))
+length = len(t)
+print(f"Length of t: {length}")
+count = t.count(3)
+print(f"Number of times 3 comes up: {count} times")
+
 
 
 
