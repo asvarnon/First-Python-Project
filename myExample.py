@@ -58,22 +58,31 @@ taxes = myIncome*taxRate
 # print(d.items())
 
 #Tuples
-    # t = (1,3,3)
-    # print(type(t))
-    # length = len(t)
-    # print(f"Length of t: {length}")
-    # count = t.count(3)
-    # print(f"Number of times 3 comes up: {count} times")
+# t = (1,3,3)
+# print(type(t))
+# length = len(t)
+# print(f"Length of t: {length}")
+# count = t.count(3)
+# print(f"Number of times 3 comes up: {count} times")
 
 
 
 #Sets
-    # mySet = set()
-    # mySet.add(1)
-    # mySet.add(2)
-    # print(mySet)
-myList = [1,1,1,2,2,2,3,3,3,3,3]
-print(set(myList))
+# mySet = set()
+# mySet.add(1)
+# mySet.add(2)
+# print(mySet)
+# myList = [1,1,1,2,2,2,3,3,3,3,3]
+# print(set(myList))
+
+# myFile = open('/Users/austinvarnon/Python Projects/First python project/exampleFile.txt')
+myFile = open('exampleFile.txt')
+myFile.readlines()
+myFile.close()
+
+#OR
+with open('exampleFile.txt') as myNewFile:
+    contents = myNewFile.readlines
 
 
 
