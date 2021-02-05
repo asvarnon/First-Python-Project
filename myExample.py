@@ -76,13 +76,24 @@ taxes = myIncome*taxRate
 # print(set(myList))
 
 # myFile = open('/Users/austinvarnon/Python Projects/First python project/exampleFile.txt')
-myFile = open('exampleFile.txt')
-myFile.readlines()
-myFile.close()
+# myFile = open('exampleFile.txt')
+# myFile.readlines()
+# myFile.close()
 
-#OR
-with open('exampleFile.txt') as myNewFile:
-    contents = myNewFile.readlines
+# #OR
+# with open('exampleFile.txt') as myNewFile:
+#     contents = myNewFile.readlines
+
+
+#Mode variables are:
+# mode='r' = is read only
+# mode='w' = write only (will overwrite files or create new!)
+# mode='a' = is append only (add on to files)
+# mode='r+' = is reading and writing
+# mode='w+' = is writing and reading
+with open("exampleFile.txt",mode='r') as myFile:
+    contents = myFile.read()
+    print(contents)
 
 
 
