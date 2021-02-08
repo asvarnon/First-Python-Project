@@ -141,12 +141,16 @@ import math
 # print(set(list5))
 
 
-print("1:", 2 > 3)
-print("2:", 3 <= 2)
-print("3:", 3 ==2.0)
-print("4:", 3.0 == 3)
-print("5:", 4**0.5 != 2)
+# print("1:", 2 > 3)
+# print("2:", 3 <= 2)
+# print("3:", 3 ==2.0)
+# print("4:", 3.0 == 3)
+# print("5:", 4**0.5 != 2)
 
+#Chaining comparison operators.
+# and, or, not
+
+print(2 == 2 and 3 == 3)
 
 
 
