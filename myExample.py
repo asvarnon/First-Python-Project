@@ -96,9 +96,58 @@ taxes = myIncome*taxRate
 # with open("exampleFile.txt",mode='a') as myFile:
 #     myFile.write("\nFourth line")
 
-with open("exampleFile.txt",mode='w') as myFile:
-    myFile.write("I CREATED THIS FILE")
+# with open("exampleFile.txt",mode='w') as myFile:
+#     myFile.write("I CREATED THIS FILE")
 
-with open("exampleFile.txt",mode='r') as myFile:
-    contents = myFile.read()
-    print(contents)
+# with open("exampleFile.txt",mode='r') as myFile:
+#     contents = myFile.read()
+#     print(contents)
+
+
+# -----------------ASSESSMENT NOTES/PROBLEMS----------------------------
+import math
+#NOTE: LISTS (Arrays), TUPLES (like FINAL, immutable), DICTIONARIES (hashmaps with key value pairs), SET(unique objects, no duplicates.)
+
+# print(type(3 + 1.5 + 4))
+
+# print(math.sqrt(25))
+# print(5**2)
+
+# s = 'hello'
+# # Print out 'e' using indexing
+# print(s[1])
+
+#------------GOOD TO REMEMBER TO REVERSE A STRING (variable)[::-1]
+# print(s[::-1])
+
+# list3 = [1,2,[3,4,'hello']]
+# list3[2][2] = 'goodbye'
+# print(list3)
+
+# d = {'simple_key':'hello'}
+# # Grab 'hello'
+# print(d['simple_key'])
+
+# d = {'k1':{'k2':'hello'}}
+# # Grab 'hello'
+# print(d['k1']['k2'])
+
+# d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+# #Grab hello
+# #tricky
+# print(d['k1'][0]['nest_key'][1][0])
+
+# list5 = [1,2,2,33,4,4,11,22,3,3,2]
+# print(set(list5))
+
+
+print("1:", 2 > 3)
+print("2:", 3 <= 2)
+print("3:", 3 ==2.0)
+print("4:", 3.0 == 3)
+print("5:", 4**0.5 != 2)
+
+
+
+
+
