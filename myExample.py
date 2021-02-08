@@ -91,9 +91,14 @@ taxes = myIncome*taxRate
 # mode='a' = is append only (add on to files)
 # mode='r+' = is reading and writing
 # mode='w+' = is writing and reading
+
+
+# with open("exampleFile.txt",mode='a') as myFile:
+#     myFile.write("\nFourth line")
+
+with open("exampleFile.txt",mode='w') as myFile:
+    myFile.write("I CREATED THIS FILE")
+
 with open("exampleFile.txt",mode='r') as myFile:
     contents = myFile.read()
     print(contents)
-
-
-
