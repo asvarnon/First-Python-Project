@@ -149,8 +149,9 @@ import math
 
 #Chaining comparison operators.
 # and, or, not
+# python uses actual words for 'and', 'or', and 'not'
 
-print(2 == 2 and 3 == 3)
+print(not 1==1)
 
 
 
