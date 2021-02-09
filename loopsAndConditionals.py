@@ -137,12 +137,50 @@
 # print(randint(1,100))
 
 ## INPUT
-myNumber = input('Enter a number: ')
-print(type(myNumber))
-print(type(float(myNumber)))
-print(f'The number you chose is: {myNumber}')
+# myNumber = input('Enter a number: ')
+# print(type(myNumber))
+# print(type(float(myNumber)))
+# print(f'The number you chose is: {myNumber}')
 
 
+#----------------------LIST COMPREHENSION-----------------------
+
+# myString = 'hello'
+# myList = []
+# for letter in myString:
+#     myList.append(letter)
+# print(myList)
+
+## OOOORRRRR
+
+# myString = 'hello'
+# myNums = '1234'
+# myList = [letter for letter in myString]
+# print(myList)
+# myNums = [x for x in myNums]
+# print(myNums)
+
+##RANDOM LIST GENERATION SCRIPT
+# myList = [x for x in range(1,10)]
+# print(myList)
+
+# myOtherList = [x for x in range(1,11) if x%2 ==0]
+# print(myOtherList)
+
+# celcius = [0,10,20,30,34.4]
+# fahrenheit = [( (9/5)*temp + 32) for temp in celcius]
+# print(fahrenheit)
+
+#Nested loop
+# myList = []
+# for x in [2,4,6]:
+#     for y in [100,200,300]:
+#         myList.append(x*y)
+# print(set(myList))
+
+##Also like:
+myList = [x*y*z for x in [2,4,6] for y in [1,10,100] for z in [.1,.2,.3]]
+print(myList)
 
 
 
