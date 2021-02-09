@@ -53,9 +53,37 @@
 #     print(b)
 
 #---------------Dictionaries----------------
-d = {'key1':1, 'key2':2, 'key3':3}
-#default iterates through keys
-for key,value in d.items():
-    print(value)
-    print(key)
+# d = {'key1':1, 'key2':2, 'key3':3}
+# #default iterates through keys
+# for key,value in d.items():
+#     print(value)
+#     print(key)
+
+
+#---------------While Loops-------------
+# x = 0
+# while x < 5:
+#     print(f"the current value is: {x}")
+#     x += 1
+# else:
+#     print('x is not less than 5')    
+
+#break, continue, pass
+x = [1,2,3]
+myString = "Austin"
+
+# for item in x:
+
+#     pass
+# print('end of script')
+
+for letter in myString:
+    if letter == 'A':
+        continue
+    print(letter)
+
+for letter in myString:
+    if letter == 't':
+        break
+    print(letter)
 
