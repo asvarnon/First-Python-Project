@@ -69,21 +69,100 @@
 #     print('x is not less than 5')    
 
 #break, continue, pass
-x = [1,2,3]
-myString = "Austin"
+# x = [1,2,3]
+# myString = "Austin"
 
 # for item in x:
 
 #     pass
 # print('end of script')
 
-for letter in myString:
-    if letter == 'A':
-        continue
-    print(letter)
+# for letter in myString:
+#     if letter == 'A':
+#         continue
+#     print(letter)
 
-for letter in myString:
-    if letter == 't':
-        break
-    print(letter)
+# for letter in myString:
+#     if letter == 't':
+#         break
+#     print(letter)
+
+
+#------------useful operators-----------
+##  RANGE
+# myList = [1,2,3,4,5,6,7,8,9]
+# range(start, stop, step)
+# range(if single number then 0 to that number)
+# for num in range(3,9,2):
+#     print(num)
+# print(list(range(3, 9, 2)))
+
+##  ENUMERATE
+# indexCount = 0
+# word = 'abcdef'
+# for letter,index in enumerate(word):
+#     print(letter)
+#     print(index)
+#     print('\n')
+
+
+##  ZIP
+# myList1 = [1,2,3,4,5]
+# myList2 = ['a','b','c','d','e']
+# myList3 = [100, 200, 300]
+
+# for item in zip(myList1, myList2, myList3):  
+#     print(item)
+# print(list(zip(myList1, myList2, myList3)))
+
+##  IN
+# print('x' in [1,2,3])
+# print('x' in ['x', 'y', 'z'])
+
+# d = {'key1':345}
+# print(345 in d.values())
+# print('key1' in d.keys())
+
+## MIN, MAX
+# myList1 = [1,2,3,4,5]
+# print(min(myList1))
+# print(max(myList1))
+
+## RANDOM, SHUFFLE
+# from random import shuffle
+# myList = [1,2,3,4,5,6]
+# shuffle(myList)
+# print(myList)
+# from random import randint
+# print(randint(1,100))
+
+## INPUT
+myNumber = input('Enter a number: ')
+print(type(myNumber))
+print(type(float(myNumber)))
+print(f'The number you chose is: {myNumber}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
