@@ -1,1 +1,5 @@
-Python basics
+- Python datatypes
+- Tuples
+- Lists
+- Sets
+- Methods
