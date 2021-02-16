@@ -24,12 +24,43 @@ def checkEvenList(numList):
     return evenNumbers
 
 numList = [1,2,3,4,5]
-print(type(checkEvenList(numList)))
+# print(type(checkEvenList(numList)))
 print(checkEvenList(numList))
-
-
 # addedNumber = addNumbers(2, 4)
 # print(squareAddedNum(addedNumber))
+
+
+workHours = [('Abby',100),('Billy',4000),('Cassie',800)]
+def employeeCheck(workHours):
+    currentMax = 0.0
+    employeeOfTheMonth = ''
+
+    for employee,hours in workHours:
+        if hours > currentMax:
+            currentMax = hours
+            employeeOfTheMonth = employee
+        else:
+            pass
+
+    #returning a tuple
+    return (employeeOfTheMonth,currentMax)
+
+print(employeeCheck(workHours))
+
+#unpack tuples with function call
+name,hours,location = employeeCheck(workHours)
+print(name)
+print(hours)
+
+
+
+
+
+
+
+
+
+
 
 # def createFile():
 #     # windowsFile = open("Desktop", "w")
