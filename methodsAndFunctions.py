@@ -45,14 +45,47 @@ def employeeCheck(workHours):
     #returning a tuple
     return (employeeOfTheMonth,currentMax)
 
-print(employeeCheck(workHours))
+# print(employeeCheck(workHours))
 
 #unpack tuples with function call
-name,hours,location = employeeCheck(workHours)
-print(name)
-print(hours)
+name,hours = employeeCheck(workHours)
+# print(name)
+# print(hours)
 
+##########################################################################################
+from random import shuffle
+example = [1,2,3,4,5,6,7]
 
+#INITIAL LIST
+myList = [' ', '0', ' ']
+
+#SHUFFLE LIST
+def shuffleList(myList):
+    shuffle(myList)
+    return myList
+print(shuffleList(myList))
+
+#USER GUESS
+def playerGuess():
+    guess = ''
+
+    while guess not in ['0', '1', '2']:
+        guess = input('pick a number of 0, 1, 2 \n')
+    return int(guess)
+
+# print(f"Your guess is {playerGuess()}")
+
+#CHECK GUESS
+def checkGuess(aList, guess):
+    if aList[guess] == '0':
+        print("Correct!")
+    else:
+        print("Wrong Guess")
+        print(aList)
+
+checkGuess(myList, playerGuess())
+
+##########################################################################################
 
 
 
