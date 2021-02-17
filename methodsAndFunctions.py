@@ -83,7 +83,8 @@ def checkGuess(aList, guess):
         print("Wrong Guess")
         print(aList)
 
-checkGuess(myList, playerGuess())
+# checkGuess(myList, playerGuess())
+#adding comment to make sure windows remote
 
 ##########################################################################################
 
@@ -95,13 +96,15 @@ checkGuess(myList, playerGuess())
 
 
 
-# def createFile():
-#     # windowsFile = open("Desktop", "w")
-#     macFile = open("/Users/austinvarnon/Desktop/testing.txt", "w")
-#     macFile.write("Hi \n")
-#     macFile.writelines("lololol...")
-#     macFile.close()
+def createFile():
+    windowsFile = open("E:\\Hello.txt", "w")
+    windowsFile.write('Hi \n')
+    windowsFile.close()
+    # macFile = open("/Users/austinvarnon/Desktop/testing.txt", "w")
+    # macFile.write("Hi \n")
+    # macFile.writelines("lololol...")
+    # macFile.close()
     
-# createFile()
+createFile()
 
 
