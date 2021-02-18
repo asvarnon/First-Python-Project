@@ -49,7 +49,7 @@ def employeeCheck(workHours):
 
 #unpack tuples with function call
 name,hours = employeeCheck(workHours)
-print(employeeCheck(workHours))
+# print(employeeCheck(workHours))
 print(name)
 print(hours)
 
