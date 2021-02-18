@@ -25,7 +25,7 @@ def checkEvenList(numList):
 
 numList = [1,2,3,4,5]
 # print(type(checkEvenList(numList)))
-print(checkEvenList(numList))
+# print(checkEvenList(numList))
 # addedNumber = addNumbers(2, 4)
 # print(squareAddedNum(addedNumber))
 
@@ -49,8 +49,9 @@ def employeeCheck(workHours):
 
 #unpack tuples with function call
 name,hours = employeeCheck(workHours)
-# print(name)
-# print(hours)
+print(employeeCheck(workHours))
+print(name)
+print(hours)
 
 ##########################################################################################
 from random import shuffle
@@ -91,20 +92,5 @@ def checkGuess(aList, guess):
 
 
 
-
-
-
-
-
-def createFile():
-    windowsFile = open("E:\\Hello.txt", "w")
-    windowsFile.write('Hi \n')
-    windowsFile.close()
-    # macFile = open("/Users/austinvarnon/Desktop/testing.txt", "w")
-    # macFile.write("Hi \n")
-    # macFile.writelines("lololol...")
-    # macFile.close()
-    
-createFile()
 
 
