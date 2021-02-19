@@ -50,8 +50,8 @@ def employeeCheck(workHours):
 #unpack tuples with function call
 name,hours = employeeCheck(workHours)
 # print(employeeCheck(workHours))
-print(name)
-print(hours)
+# print(name)
+# print(hours)
 
 ##########################################################################################
 from random import shuffle
@@ -64,7 +64,7 @@ myList = [' ', '0', ' ']
 def shuffleList(myList):
     shuffle(myList)
     return myList
-print(shuffleList(myList))
+# print(shuffleList(myList))
 
 #USER GUESS
 def playerGuess():
@@ -89,8 +89,35 @@ def checkGuess(aList, guess):
 
 ##########################################################################################
 
+def myFunc(a, b, c = 0, d = 0, e = 0):
+    #returns 5% of the sum of a and b
+    return sum((a, b, c, d, e)) * 0.05
+
+#can only take 2-5 params
+# print(myFunc(2,4))
 
 
+def myFunct(*args):
+    return sum(args) * 0.05
+
+# the '*' allows unlimited amount of params by returning them in a tuple
+# print(myFunct(2, 3))
+# print(myFunct(2,4.6,6,4))
+
+def myFunction(**kwargs):
+    if 'fruit' in kwargs:
+        print('My fruit of choice is {}'.format(kwargs['fruit']))
+    else:
+        print(' I did not find any fruit here..')
+
+# '**' returns a dictionary
+print(myFunction(fruit = 'apple', veggie = 'lettuce'))
 
 
+def myFunctions(*args, **kwargs):
+    print(args)
+    print(kwargs)
+    print('I would like {} {}'.format(args[0], kwargs['food']))
 
+print(myFunctions(10, 20, 30, fruit='orange', food='eggs', animal='dog')
+)
