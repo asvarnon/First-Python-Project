@@ -89,9 +89,9 @@ def checkGuess(aList, guess):
 
 ##########################################################################################
 
-def myFunc(a, b, c = 0, d = 0, e = 0):
-    #returns 5% of the sum of a and b
-    return sum((a, b, c, d, e)) * 0.05
+# def myFunc(a, b, c = 0, d = 0, e = 0):
+#     #returns 5% of the sum of a and b
+#     return sum((a, b, c, d, e)) * 0.05
 
 #can only take 2-5 params
 # print(myFunc(2,4))
@@ -111,7 +111,7 @@ def myFunction(**kwargs):
         print(' I did not find any fruit here..')
 
 # '**' returns a dictionary
-print(myFunction(fruit = 'apple', veggie = 'lettuce'))
+# print(myFunction(fruit = 'apple', veggie = 'lettuce'))
 
 
 def myFunctions(*args, **kwargs):
@@ -119,5 +119,25 @@ def myFunctions(*args, **kwargs):
     print(kwargs)
     print('I would like {} {}'.format(args[0], kwargs['food']))
 
-print(myFunctions(10, 20, 30, fruit='orange', food='eggs', animal='dog')
-)
+# print(myFunctions(10, 20, 30, fruit='orange', food='eggs', animal='dog')
+# )
+
+def myfunc(String):
+    i = True
+    newString = ""
+    for letter in String:
+        print('Begin of loop, i is {}, char is {} and the new quote is {}'.format(i, letter, newString))
+        print('Index of letter is {}'.format(String.index(letter))
+        
+        letterIndex = String.index(letter)+1
+        # print(type(String.index(letter)))
+        if letterIndex % 2 == 0:
+            print('UPPER')
+            newString += letter.upper()
+        else:
+            print('LOWER')
+            newString += letter.lower()
+        print("\nAfter Loop, i is {} and the new quote is {}\n".format(i, newString))
+    return newString
+
+print(myfunc('Anthropomorphism'))
