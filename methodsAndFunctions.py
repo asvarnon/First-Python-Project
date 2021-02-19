@@ -123,21 +123,16 @@ def myFunctions(*args, **kwargs):
 # )
 
 def myfunc(String):
-    i = True
     newString = ""
-    for letter in String:
-        print('Begin of loop, i is {}, char is {} and the new quote is {}'.format(i, letter, newString))
-        print('Index of letter is {}'.format(String.index(letter))
-        
-        letterIndex = String.index(letter)+1
-        # print(type(String.index(letter)))
-        if letterIndex % 2 == 0:
+    for position, letter in enumerate(String):
+        print(f'Begin of loop, char is {letter} and the new quote is {newString}')
+        if (position +1 ) % 2 == 0:
             print('UPPER')
             newString += letter.upper()
         else:
             print('LOWER')
             newString += letter.lower()
-        print("\nAfter Loop, i is {} and the new quote is {}\n".format(i, newString))
+        print(f"\nAfter Loop, new quote is {newString}\n")
     return newString
 
-print(myfunc('Anthropomorphism'))
+print(myfunc("Anthropomorphism"))
