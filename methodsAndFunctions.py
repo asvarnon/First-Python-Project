@@ -141,8 +141,37 @@ def myfunc(String):
 def almostThere(n):
     return (abs(100 - n) <= 10) or (abs(200 - n) <= 10)
 
-print(almostThere(103))
-print(almostThere(150))
+# print(almostThere(103))
+# print(almostThere(150))
 
+#Find 33
+def has33(nums):
+    numberCount = 0
+    for num in range(0, len(nums) - 1):
+        if nums[num] == 3 and nums[num + 1] == 3:
+            return True
+    return False
+
+# print(has33([1,3,3]))
+
+#given a string, return a string where for every character in the original, there are 3 chars
+def paperDoll(str):
+    result = ''
+    for char in str:
+        result += char*3
+    return result
+
+# print(paperDoll("hello"))
+
+#blackjack
+def blackjack(a, b, c):
+    if sum([a, b, c]) <= 21:
+        return sum([a, b, c])
+    elif 11 in [a,b,c] and sum([a,b,c]) - 10 <= 21:
+        return sum([a,b,c])
+    else:
+        return "BUST"
+
+print(blackjack(2,10,11))
 
 
