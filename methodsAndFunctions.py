@@ -125,14 +125,24 @@ def myFunctions(*args, **kwargs):
 def myfunc(String):
     newString = ""
     for position, letter in enumerate(String):
-        print(f'Begin of loop, char is {letter} and the new quote is {newString}')
+        # print(f'Begin of loop, char is {letter} and the new quote is {newString}')
         if (position +1 ) % 2 == 0:
-            print('UPPER')
+            # print('UPPER')
             newString += letter.upper()
         else:
-            print('LOWER')
+            # print('LOWER')
             newString += letter.lower()
-        print(f"\nAfter Loop, new quote is {newString}\n")
+        # print(f"\nAfter Loop, new quote is {newString}\n")
     return newString
 
-print(myfunc("Anthropomorphism"))
+# print(myfunc("Anthropomorphism"))
+
+#given an integer, returns true if within 10 of either 100 or 200
+def almostThere(n):
+    return (abs(100 - n) <= 10) or (abs(200 - n) <= 10)
+
+print(almostThere(103))
+print(almostThere(150))
+
+
+
