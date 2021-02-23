@@ -208,9 +208,35 @@ def spyGame(nums):
             codeList.pop(0)
     return len(codeList) == 1
 
-print(spyGame([1,2,4,0,0,7,5]))
-print(spyGame([1,2,0,4,0,5,6,7]))
-print(spyGame([1,7,2,4,0,0,5]))
+# print(spyGame([1,2,4,0,0,7,5]))
+# print(spyGame([1,2,0,4,0,5,6,7]))
+# print(spyGame([1,7,2,4,0,0,5]))
 
+#Counting primes
+def countPrimes(num):
+    #check for 0 or 1 input
+    if num < 2:
+        return 0
+    # 2 or greater
 
+    #store prime numbers
+    primes = [2]
+    #counter going up to the input num
+    x = 3
+
+    #x is going through every number to input num
+    while x <= num:
+        #check if x in prime
+        for y in primes:
+            if x % y == 0:
+                x += 2
+                break
+        else:
+            primes.append(x)
+            x += 2
+    print(primes)
+    print(len(primes))
+    return len(primes)
+
+countPrimes(100)
 
