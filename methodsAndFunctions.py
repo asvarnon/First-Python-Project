@@ -172,6 +172,32 @@ def blackjack(a, b, c):
     else:
         return "BUST"
 
-print(blackjack(2,10,10))
+# print(blackjack(2,10,10))
+# print(blackjack(2,10,11))
+
+#Return sum of numbers in array, except ignore sections with a 6 and extending to the next 9. return 0 for no numbers.
+def summer69(array):
+    total = 0
+    add = True
+    for num in array:
+        while add:
+            if num != 6:
+                total += num
+                break
+            else:
+                add = False
+        while not add:
+            if num != 9:
+                break
+            else:
+                add = True
+                break
+    return total
+
+print(summer69([1,3,5]))
+print(summer69([1,3,6,9]))
+print(summer69([1,3,6,7,8,9]))
+
+
 
 
