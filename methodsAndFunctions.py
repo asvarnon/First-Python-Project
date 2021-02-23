@@ -194,10 +194,23 @@ def summer69(array):
                 break
     return total
 
-print(summer69([1,3,5]))
-print(summer69([1,3,6,9]))
-print(summer69([1,3,6,7,8,9]))
+# print(summer69([1,3,5]))
+# print(summer69([1,3,6,9]))
+# print(summer69([1,3,6,7,8,9]))
 
+#function returns true if it contains 007 in order. does not have to be consecutively.
+def spyGame(nums):
+
+    codeList = [0, 0, 7, 'x']
+
+    for num in nums:
+        if num == codeList[0]:
+            codeList.pop(0)
+    return len(codeList) == 1
+
+print(spyGame([1,2,4,0,0,7,5]))
+print(spyGame([1,2,0,4,0,5,6,7]))
+print(spyGame([1,7,2,4,0,0,5]))
 
 
 
