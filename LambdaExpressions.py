@@ -35,5 +35,41 @@ def square(num):
 square = lambda num: num ** 2
 
 # print(list(map(lambda num: num ** 2, myNumArr)))
-print(list(map(lambda x : x[::-1], names)))
+# print(list(map(lambda x : x[::-1], names)))
+
+################### PRACTICE / HW Problems ##################
+import math as math
+
+def vol(radius):
+    return ((4/3)*math.pi*radius**3)
+
+# print(vol(2))
+
+#Check if a number is in a range or no
+def rangeCheck(num, low, high):
+    if num in range(low, high):
+        return True
+    else:
+        return False
+
+# print(rangeCheck(3, 1, 10))
+
+#accepts string and calculates the number of uppercase and lowercase letters
+def upLow(str):
+    upperCount = 0
+    lowerCount = 0
+    for char in str:
+        if char.isupper():
+            upperCount += 1
+        else:
+            lowerCount += 1   
+    return upperCount, lowerCount
+
+# print(upLow("Hi, my name is Austin"))
+
+#takes in a list and returns a list with unique elements of the first list
+def uniqueElements(lst):
+    return list(set(lst))
+
+print(uniqueElements([1,1,1,2,2,2,3,3,3,4,4,4]))
 
