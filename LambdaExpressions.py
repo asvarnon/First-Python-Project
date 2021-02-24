@@ -71,5 +71,27 @@ def upLow(str):
 def uniqueElements(lst):
     return list(set(lst))
 
-print(uniqueElements([1,1,1,2,2,2,3,3,3,4,4,4]))
+# print(uniqueElements([1,1,1,2,2,2,3,3,3,4,4,4]))
 
+#multiply all numbers in a list
+def multiply(numbers):
+    multipliedNumber = 1
+    for num in numbers:
+        multipliedNumber *= num
+    return multipliedNumber
+
+# print(multiply([1,2,3,4,5]))
+
+#check if string is palindrome
+def isPal(str):
+    splitString = [char for char in str]
+    reversedList = splitString[::-1]
+    if str == ''.join(reversedList):
+        return True
+    else:
+        return False
+
+    
+
+print(isPal("racecar"))
+print(isPal("hello"))
