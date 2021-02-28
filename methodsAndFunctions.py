@@ -238,5 +238,5 @@ def countPrimes(num):
     print(len(primes))
     return len(primes)
 
-countPrimes(100)
+# countPrimes(100)
 

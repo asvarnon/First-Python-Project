@@ -96,3 +96,4 @@ def isPal(str):
 print(isPal("racecar"))
 print(isPal("hello"))
 print(isPal('91019'))
+print(isPal('439343'))
