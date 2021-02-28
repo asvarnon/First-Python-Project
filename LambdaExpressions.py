@@ -93,7 +93,19 @@ def isPal(str):
 
     
 
-print(isPal("racecar"))
-print(isPal("hello"))
-print(isPal('91019'))
-print(isPal('439343'))
+# print(isPal("racecar"))
+# print(isPal("hello"))
+# print(isPal('91019'))
+# print(isPal('439343'))
+
+##
+def findNumber(num):
+    if num in range(1,101):
+        return True
+    else:
+        return False
+
+
+print(findNumber(101))
+print(findNumber(100))
+
